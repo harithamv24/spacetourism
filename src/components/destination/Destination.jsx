@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./destination.css";
 import data from "../../starter-code/data.json";
-import moon from "../../starter-code/assets/destination/image-europa.png";
-import { NavLink } from "react-router-dom";
 
 const Destination = () => {
   const [name, setName] = useState("");

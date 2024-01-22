@@ -24,30 +24,38 @@ const Navbar = ({ logo, close, menu }) => {
           onClick={() => open_side_bar()}
         />
         <ul className="nav__list">
-          <NavLink
-            to="/"
-            className={({ isActive }) => (isActive ? "active" : "")}
-          >
-            <li>00 Home</li>
-          </NavLink>
-          <NavLink
-            to="/destination"
-            className={({ isActive }) => (isActive ? "active" : "")}
-          >
-            <li>01 Destination</li>
-          </NavLink>
-          <NavLink
-            to="/crew"
-            className={({ isActive }) => (isActive ? "active" : "")}
-          >
-            <li>02 Crew</li>
-          </NavLink>
-          <NavLink
-            to="/technology"
-            className={({ isActive }) => (isActive ? "active" : "")}
-          >
-            <li>03 Technology</li>
-          </NavLink>
+          <li>
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              00 Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/destination"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              01 Destination
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/crew"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              02 Crew
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/technology"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              03 Technology
+            </NavLink>
+          </li>
         </ul>
       </div>
     </nav>

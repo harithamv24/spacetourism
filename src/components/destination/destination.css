@@ -1,0 +1,226 @@
+.destination__class {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../starter-code/assets/destination/background-destination-desktop.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding-inline: 2rem;
+    overflow: hidden;
+    color: var(--color-white);
+}
+
+.destination__content {
+    width: 85%;
+    height: calc(100% - 124px);
+
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.destination__title p {
+    font-family: var(--font-family-primary);
+    font-size: 1.25rem;
+    letter-spacing: 2.7px;
+    color: var(--color-white);
+    text-transform: uppercase;
+}
+
+.destination__details {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.destination__details .destination__left__details {
+    width: 30%;
+    min-width: 211px;
+
+    /*max-width: 400px; */
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.destination__details .destination__left__details img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.destination__details .destination__right__details {
+    width: 30%;
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: space-around;
+}
+
+.destination__details .destination__right__details ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 20px;
+
+    font-family: var(--font-family-primary);
+}
+
+.destination__details .destination__right__details ul li {
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+.destination_active {
+
+    border-bottom: 2px solid var(--color-white);
+}
+
+.destination__details .destination__right__details h1 {
+    font-family: var(--font-family-secondary);
+    font-size: 5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+
+
+}
+
+.destination__details .destination__right__details>p {
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var(--color-light);
+    line-height: 1.2rem;
+}
+
+.destination__details .destination__right__details p {
+    font-family: var(--font-family-primary);
+    font-size: 0.813rem;
+    letter-spacing: 1px;
+    color: #ffffffba;
+}
+
+.destination__details .destination__right__details :not(p:nth-of-type(1)) {
+
+    text-transform: uppercase;
+}
+
+.properties {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+
+}
+
+.destination__details .destination__right__details h3 {
+    font-family: var(--font-family-secondary);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+@media (max-width:1000px) {
+
+    .destination__left__details,
+    .destination__right__details {
+        flex-basis: 40%;
+    }
+
+    .destination__details {
+        justify-content: space-between;
+    }
+
+
+}
+
+/* tablet */
+
+
+@media (max-width:790px) {
+    .destination__details {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 1rem;
+        padding-top: 1rem;
+    }
+
+    .destination__content {
+        width: 100%;
+        justify-content: end;
+        padding-top: 1rem;
+    }
+
+    .destination__class {
+
+        background-image: url('../../starter-code/assets/destination/background-destination-tablet.jpg');
+    }
+
+    .destination__details .destination__left__details {
+        width: 50%;
+        height: 40%;
+        min-width: 50%;
+    }
+
+    .destination__details .destination__right__details {
+        width: 100%;
+        height: 50%;
+        align-items: center;
+        gap: 0px;
+        text-align: center;
+
+    }
+
+    .destination__title {
+        padding: 1rem 0px;
+    }
+
+    .destination__details .destination__right__details>p {
+        padding-bottom: 1rem;
+    }
+}
+
+/* mobile */
+@media (max-width:635px) {
+    .destination__class {
+
+        background-image: url('../../starter-code/assets/destination/background-destination-mobile.jpg');
+    }
+
+    .destination__title {
+        margin: auto;
+    }
+
+
+
+}
+
+@media (max-width:370px) {
+
+
+    .destination__title p {
+        font-size: 1rem;
+    }
+
+    .destination__details .destination__right__details h1 {
+        font-size: 4rem;
+    }
+
+    .destination__details .destination__right__details p {
+        font-size: 0.7rem;
+    }
+
+    .destination__details .destination__right__details h3 {
+        font-size: 1rem;
+    }
+}
